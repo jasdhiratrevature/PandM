@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: com.revature.integration.UserIntegrationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.808 s <<< FAILURE! -- in com.revature.integration.UserIntegrationTests
+com.revature.integration.UserIntegrationTests.createUserPositive -- Time elapsed: 0.803 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <500>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at com.revature.integration.UserIntegrationTests.lambda$createUserPositive$0(UserIntegrationTests.java:46)
+	at io.javalin.testtools.TestTool.test$lambda$3(TestTool.kt:36)
+	at io.javalin.testtools.TestTool.runAndCaptureLogs(TestTool.kt:64)
+	at io.javalin.testtools.TestTool.test(TestTool.kt:33)
+	at io.javalin.testtools.JavalinTest.test(JavalinTest.kt:13)
+	at io.javalin.testtools.JavalinTest.test$default(JavalinTest.kt:12)
+	at io.javalin.testtools.JavalinTest.test(JavalinTest.kt)
+	at com.revature.integration.UserIntegrationTests.createUserPositive(UserIntegrationTests.java:35)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
